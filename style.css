@@ -1,0 +1,132 @@
+:root {
+    background-color: black;
+    --primary-color: #64cece ;	
+    --secondary-color: #fc8739	;
+   --light-color: hsl(0, 0%, 100%);
+   --bgColor-1 :#171a1c;
+   --bgColor-2 : #22282a;
+   --padding:8%;
+
+
+  }
+
+*{ 
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;}
+
+
+html{ font-family: 'Josefin Sans', sans-serif;
+font-size: 16px;
+color: var(--light-color);}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgColor-1);
+    display: flex;
+    flex-direction: column;
+}
+span {color: var(--primary-color);}
+h2{font-size: 2.2rem;
+letter-spacing: 0.12rem;
+cursor: pointer;}
+nav{  padding-top: 2.8rem ;
+padding-left: var(--padding);
+padding-right: var(--padding);
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: black;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 1rem 2rem;
+}
+nav ul li a{ color: var(--light-color);
+text-decoration-line: none;
+text-transform: capitalize;
+transition: 0.2s;}
+nav ul li a:hover {color: var(--primary-color);}
+.content{ 
+flex-grow: 1 ; 
+padding: 0 var(--padding);
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.texts{
+    position: relative;
+    bottom: 70px;
+}
+
+h1{font-size: 6rem;
+margin: 1.5rem 0;
+;}
+h2{ text-align: center; padding-bottom: 30px; 
+    padding-top: 10%;
+}
+h3 {font-size: 1.2rem;
+margin-bottom: 3.5rem;}
+
+h4{font-size: 1rem;
+letter-spacing: 00.12rem;
+color: var(--secondary-color);}
+
+.btn{ background-color: var(--primary-color);
+color: var(--light-color);
+text-decoration: none;
+font-weight: bold;
+padding: 0.6rem 1.60rem;
+border-radius: 20px;}
+
+.btn:hover{ background-color: transparent;
+border: 2px solid var(--primary-color);} 
+
+.about{ background-color: var(--bgColor-2);
+padding: 2rem var(--padding);
+display: flex;
+justify-content: space-around; 
+align-items: center;
+background-color: var(--bgColor-2);}
+
+.about .image img { width: 90%} 
+.about .texts { width: 35%;
+}
+
+
+
+    .tableau {
+        border-collapse: collapse;
+        margin: 25px 0;
+        display: flex;
+        
+       }
+.tableau table{
+    background-color: #555c5c;
+ font-size: 20px;
+ min-width: 400px;
+ align-content: center;
+margin-left: 50px ;
+}
+.tableau table th{
+    padding: 12px 15px;
+}
+ .field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: rgb(255, 218, 149);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    
+ }
+ .social {margin-top: 3.5rem;
+    display: flex;
+justify-content: center;}
+ .social img {
+    margin-right: 2rem;
+    width: 1.5rem;
+ }
+ .social img :hover {transform:  scale(1.2);}
